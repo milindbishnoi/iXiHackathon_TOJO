@@ -19,7 +19,8 @@
         android:icon="@mipmap/children"
         android:label="TOJO"
         android:theme="@style/MaterialTheme">
-        <activity android:name=".categories"></activity>
+        <activity android:name=".Main2Activity"></activity>
+        <activity android:name=".categories" />
         <activity android:name=".SplashScreen" />
         <activity android:name=".Suggestions" />
         <activity
