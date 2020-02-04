@@ -7,8 +7,10 @@
         android:targetSdkVersion="23" />
 
     <uses-permission android:name="android.permission.CAMERA" />
+
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
+
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
@@ -17,7 +19,8 @@
         android:icon="@mipmap/children"
         android:label="TOJO"
         android:theme="@style/MaterialTheme">
-        <activity android:name=".Suggestions"></activity>
+        <activity android:name=".SplashScreen"></activity>
+        <activity android:name=".Suggestions" />
         <activity
             android:name=".view.ClassifierActivity"
             android:label="TOJO"
