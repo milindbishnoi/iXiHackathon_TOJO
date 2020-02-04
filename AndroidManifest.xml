@@ -3,12 +3,14 @@
     package="org.tensorflow.yolo">
 
     <uses-sdk
-        android:minSdkVersion="23"
-        android:targetSdkVersion="23" />
+        android:minSdkVersion="24"
+        android:targetSdkVersion="24" />
 
     <uses-permission android:name="android.permission.CAMERA" />
+
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
+
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
@@ -17,7 +19,8 @@
         android:icon="@mipmap/children"
         android:label="TOJO"
         android:theme="@style/MaterialTheme">
-        <activity android:name=".Suggestions"></activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".Suggestions" />
         <activity
             android:name=".view.ClassifierActivity"
             android:label="TOJO"
