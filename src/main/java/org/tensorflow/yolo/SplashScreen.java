@@ -1,10 +1,15 @@
 package org.tensorflow.yolo;
 
+import android.content.Intent;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import org.tensorflow.yolo.view.ClassifierActivity;
+
 public class SplashScreen extends AppCompatActivity {
 
+    private final int SPLASH_DISPLAY_LENGTH = 1000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -15,9 +20,9 @@ public class SplashScreen extends AppCompatActivity {
             @Override
             public void run() {
                 /* Create an Intent that will start the Menu-Activity. */
-                Intent mainIntent = new Intent(Splash.this,Menu.class);
-                Splash.this.startActivity(mainIntent);
-                Splash.this.finish();
+                Intent mainIntent = new Intent(SplashScreen.this, ClassifierActivity.class);
+                SplashScreen.this.startActivity(mainIntent);
+                SplashScreen.this.finish();
             }
         }, SPLASH_DISPLAY_LENGTH);
     }
