@@ -139,7 +139,7 @@ public class ClassifierActivity extends TextToSpeechActivity implements OnImageA
             }
         }
 
-          lines.add("Find a Tree");
+          lines.add("Find a Bottle");
 //        lines.add("Frame: " + previewWidth + "x" + previewHeight);
 //        lines.add("View: " + canvas.getWidth() + "x" + canvas.getHeight());
 //        lines.add("Rotation: " + sensorOrientation);

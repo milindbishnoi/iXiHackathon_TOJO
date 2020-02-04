@@ -16,14 +16,12 @@ public class Suggestions extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_suggestions);
         YT= (TextView) findViewById(R.id.knowmore);
-        Time=(TextView) findViewById(R.id.time); 
+        Time=(TextView) findViewById(R.id.time);
         YT.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=w77zPAtVTuI")));
             }
         });
-
-
     }
 }

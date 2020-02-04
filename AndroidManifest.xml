@@ -21,17 +21,19 @@
         android:theme="@style/MaterialTheme">
         <activity android:name=".Main2Activity"></activity>
         <activity android:name=".categories" />
-        <activity android:name=".SplashScreen" />
-        <activity android:name=".Suggestions" />
-        <activity
-            android:name=".view.ClassifierActivity"
-            android:label="TOJO"
-            android:screenOrientation="portrait">
+        <activity android:name=".SplashScreen" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".Suggestions" />
+        <activity
+            android:name=".view.ClassifierActivity"
+            android:label="TOJO"
+            android:screenOrientation="portrait">
+
         </activity>
     </application>
 
