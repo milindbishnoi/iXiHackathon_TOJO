@@ -14,11 +14,11 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
+        android:theme="@style/Theme.AppCompat.Light"
         android:allowBackup="true"
         android:debuggable="true"
         android:icon="@mipmap/children"
-        android:label="TOJO"
-        android:theme="@style/MaterialTheme">
+        android:label="TOJO">
         <activity android:name=".Main2Activity"></activity>
         <activity android:name=".categories" />
         <activity android:name=".SplashScreen" >
