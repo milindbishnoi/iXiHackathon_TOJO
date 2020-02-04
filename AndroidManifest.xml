@@ -3,8 +3,8 @@
     package="org.tensorflow.yolo">
 
     <uses-sdk
-        android:minSdkVersion="24"
-        android:targetSdkVersion="24" />
+        android:minSdkVersion="23"
+        android:targetSdkVersion="23" />
 
     <uses-permission android:name="android.permission.CAMERA" />
 
@@ -19,7 +19,8 @@
         android:icon="@mipmap/children"
         android:label="TOJO"
         android:theme="@style/MaterialTheme">
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".categories"></activity>
+        <activity android:name=".SplashScreen" />
         <activity android:name=".Suggestions" />
         <activity
             android:name=".view.ClassifierActivity"
