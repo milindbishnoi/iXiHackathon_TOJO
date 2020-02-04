@@ -9,9 +9,9 @@
 ### Like, find an object with leaves and a brown trunk for a class 1 student.Then the answer to this is a tree.Then the student will scan and app analysis the result,after that we will be providing a complete information about the growth of the tree, species of the tree, how the fruits are growing on the tree.We will be providing this information throught Augmented Reality to make learning interesting. On the basis of their performance we will be generating progress report judging various cognitive skills. We will be analysing reactime time, perception, processing, listening and procedural thinking and will be providingthe personalized status growth report.The application will be generating the progress report which gives the parents an abstract view of theirchild's ability,interests and skills which help them to take better future decisions for them. 
 
 ## TechStack
-### Android Studio
-### Android SDK
-### Scene form SDK
-### AR Core
-### YOLO Y2
-### Tensor Flow Lite
+### 1.Android Studio
+### 2.Android SDK
+### 3.Scene form SDK
+### 4.AR Core
+### 5.YOLO Y2
+### 6.Tensor Flow Lite
