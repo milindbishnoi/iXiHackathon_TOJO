@@ -28,6 +28,8 @@ import java.util.Vector;
  * Modified by Zoltan Szabo
  */
 public class ClassifierActivity extends TextToSpeechActivity implements OnImageAvailableListener {
+    public static String Question;
+    public  static int Tag;
     private boolean MAINTAIN_ASPECT = true;
     private float TEXT_SIZE_DIP = 10;
     public static int found=0;
@@ -99,13 +101,13 @@ public class ClassifierActivity extends TextToSpeechActivity implements OnImageA
             }
             Log.e(org.tensorflow.yolo.Config.LOGGING_TAG, ex.getMessage());
         }
-
+//        TextToSpeechActivity.ans=Tag;
         runInBackground(() -> {
             final long startTime = SystemClock.uptimeMillis();
             final List<Recognition> results = recognizer.recognizeImage(croppedBitmap);
             lastProcessingTimeMs = SystemClock.uptimeMillis() - startTime;
             //overlayView.setResults(results);
-                speak(results);
+                speak(results,Tag);
 
             requestRender();
             computing = false;
@@ -139,7 +141,7 @@ public class ClassifierActivity extends TextToSpeechActivity implements OnImageA
             }
         }
 
-          lines.add("Find a Bottle");
+          lines.add(Question);
 //        lines.add("Frame: " + previewWidth + "x" + previewHeight);
 //        lines.add("View: " + canvas.getWidth() + "x" + canvas.getHeight());
 //        lines.add("Rotation: " + sensorOrientation);

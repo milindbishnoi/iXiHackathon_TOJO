@@ -15,8 +15,6 @@ public class SplashScreen extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
-        /* New Handler to start the Menu-Activity
-         * and close this Splash-Screen after some seconds.*/
         new Handler().postDelayed(new Runnable(){
             @Override
             public void run() {
@@ -26,6 +24,5 @@ public class SplashScreen extends Activity {
                 SplashScreen.this.finish();
             }
         }, SPLASH_DISPLAY_LENGTH);
-
     }
 }

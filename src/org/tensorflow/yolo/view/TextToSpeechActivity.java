@@ -38,10 +38,47 @@ public abstract class TextToSpeechActivity extends CameraActivity implements Tex
         textToSpeech = new TextToSpeech(this, this);
     }
 
-    protected void speak(List<Recognition> results) {
+    protected void speak(List<Recognition> results,int ans) {
         if (!(results.isEmpty() || lastRecognizedClass.equals(results.get(0).getTitle()))) {
             lastRecognizedClass = results.get(0).getTitle();
+
             if(lastRecognizedClass.equals("bottle")) {
+                ClassifierActivity.found = 1;
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                    textToSpeech.speak(lastRecognizedClass + "found", TextToSpeech.QUEUE_FLUSH, null, null);
+                } else {
+                    textToSpeech.speak(lastRecognizedClass + "found", TextToSpeech.QUEUE_FLUSH, null);
+                }
+
+            }else if(ans==2&&lastRecognizedClass.equals("tree")) {
+                ClassifierActivity.found=1;
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                    textToSpeech.speak(lastRecognizedClass+"found", TextToSpeech.QUEUE_FLUSH, null, null);
+                } else {
+                    textToSpeech.speak(lastRecognizedClass+"found", TextToSpeech.QUEUE_FLUSH, null);
+                }
+            }else if(ans==3&&lastRecognizedClass.equals("cycle")) {
+                ClassifierActivity.found=1;
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                    textToSpeech.speak(lastRecognizedClass+"found", TextToSpeech.QUEUE_FLUSH, null, null);
+                } else {
+                    textToSpeech.speak(lastRecognizedClass+"found", TextToSpeech.QUEUE_FLUSH, null);
+                }
+            }else if(ans==4&&lastRecognizedClass.equals("bag")) {
+                ClassifierActivity.found=1;
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                    textToSpeech.speak(lastRecognizedClass+"found", TextToSpeech.QUEUE_FLUSH, null, null);
+                } else {
+                    textToSpeech.speak(lastRecognizedClass+"found", TextToSpeech.QUEUE_FLUSH, null);
+                }
+            }else if(ans==5&&lastRecognizedClass.equals("person")) {
+                ClassifierActivity.found=1;
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                    textToSpeech.speak(lastRecognizedClass+"found", TextToSpeech.QUEUE_FLUSH, null, null);
+                } else {
+                    textToSpeech.speak(lastRecognizedClass+"found", TextToSpeech.QUEUE_FLUSH, null);
+                }
+            }else if(ans==6&&lastRecognizedClass.equals("tree")) {
                 ClassifierActivity.found=1;
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                     textToSpeech.speak(lastRecognizedClass+"found", TextToSpeech.QUEUE_FLUSH, null, null);

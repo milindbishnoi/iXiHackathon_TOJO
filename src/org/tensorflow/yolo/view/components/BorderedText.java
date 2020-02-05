@@ -41,21 +41,21 @@ public class BorderedText {
      */
     public BorderedText(final int interiorColor, final int exteriorColor, final float textSize) {
         interiorPaint = new Paint();
-        interiorPaint.setTextSize(100);
+        interiorPaint.setTextSize(30);
         interiorPaint.setColor(interiorColor);
         interiorPaint.setStyle(Style.FILL);
         interiorPaint.setAntiAlias(false);
         interiorPaint.setAlpha(255);
 
         exteriorPaint = new Paint();
-        exteriorPaint.setTextSize(300);
+        exteriorPaint.setTextSize(30);
         exteriorPaint.setColor(exteriorColor);
         exteriorPaint.setStyle(Style.FILL_AND_STROKE);
         exteriorPaint.setStrokeWidth(textSize / 8);
         exteriorPaint.setAntiAlias(false);
         exteriorPaint.setAlpha(255);
 
-        this.textSize = 300;
+        this.textSize = 30;
     }
 
     public void setTypeface(Typeface typeface) {

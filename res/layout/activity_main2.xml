@@ -10,13 +10,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:background="#fee8fd"
         >
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Options"
-            android:textSize="30dp"
-            android:gravity="center"/>
+            android:text="Categories"
+            android:textSize="35dp"
+            android:gravity="center"
+            android:background="#fee8fd"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -27,12 +29,15 @@
                 android:layout_height="200dp"
                 android:text="Searching"
                 android:gravity="center"
-                android:id="@+id/click"/>
+                android:id="@+id/Searching"
+                android:background="#e0b0ff"/>
             <TextView
                 android:layout_width="200dp"
                 android:layout_height="200dp"
-                android:text="Searching"
-                android:gravity="center"/>
+                android:text="puzzle"
+                android:gravity="center"
+                android:id="@+id/puzzle"
+                android:background="#dadef6"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -42,13 +47,17 @@
             <TextView
                 android:layout_width="200dp"
                 android:layout_height="200dp"
-                android:text="Searching"
-                android:gravity="center"/>
+                android:text="riddles"
+                android:gravity="center"
+                android:id="@+id/Riddles"
+                android:background="#fee8fd"/>
             <TextView
                 android:layout_width="200dp"
                 android:layout_height="200dp"
-                android:text="Searching"
-                android:gravity="center"/>
+                android:text="Science"
+                android:gravity="center"
+                android:id="@+id/Science"
+                android:background="#fddae5"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -58,18 +67,22 @@
             <TextView
                 android:layout_width="200dp"
                 android:layout_height="200dp"
-                android:text="Searching"
-                android:gravity="center"/>
+                android:text="Logical"
+                android:gravity="center"
+                android:id="@+id/Logical"
+                android:background="#d3f3c8"/>
             <TextView
                 android:layout_width="200dp"
                 android:layout_height="200dp"
-                android:text="Searching"
-                android:gravity="center"/>
+                android:text="Random"
+                android:gravity="center"
+                android:id="@+id/Random"
+                android:background="#e0b0ff"/>
         </LinearLayout>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="parents portal"
+            android:text="Parents Portal"
             android:textSize="30dp"
             android:gravity="center"
             android:id="@+id/parents"/>
